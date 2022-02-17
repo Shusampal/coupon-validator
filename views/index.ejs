@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to Coupon code validator</h1>
+    <br><br>
+    <div>
+        <h3>Create Coupon</h3>
+        <form action="/create" method="post">
+            expiry date : <input type="date" name="expiry" id="expiry" required>
+            min cart value required ($): <input type="number" name="minvalue" id="minvalue" required>
+            type: <select name="type" id="type" required>
+                <option value="flat">flat</option>
+                <option value="percentage">percentage</option>
+            </select>
+            flat amount or % : <input type="number" name="amountorper" id="amountorper" required>
+            <button id="create" type="submit">create</button>
+         </form>
+    </div>
+    <br>
+   <div>
+    <h3>List Coupon </h3>
+    <form action="/list" method="get">
+        <button id="list" type="submit">list</button>
+    </form>
+   </div>
+    <br>
+    <div>
+        <h3>Validate Coupon</h3>
+        <form action="/validate" method="post">
+           cart amount ($): <input type="number" name="cart" id="cart" required>
+           coupon : <input type="text" name="coupon" id="coupon" required>
+           <button id="validate" type="submit">validate</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
