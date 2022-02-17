@@ -54,4 +54,4 @@ it is simple , when user hits the list button , the server pulls all dat from th
 3. if all validations are done , then the discount amount will be send as response.
 
 
-# NOTE - All validations are in index.js file under validation starts here comment
+### NOTE - All validations are in index.js file under validation starts here comment
