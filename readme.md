@@ -5,7 +5,7 @@
 ## Tech stack
 * Frontend is made of EJS ( which is server side templating engine).
 * Backend is made using ExpressJS.
-* Array is used as mock Databased for all coupons
+* Array is used as mock Database for all coupons
 
 ## How to run locally
 Please follow below instructions below -
@@ -35,19 +35,23 @@ There are 2 inputs from client to validate a coupon
 1. cart amount ( the cart amount ).
 2. coupon ( coupon code )
 
+To send create request , press validate button.
+
 ## working
 
 ### create coupon
-1. When one creates a coupon , based on validations it will throw error json as a result.
-2. if all validations are done , then this coupon is saved in array.
-3. that saved coupon will be send as response.
+1. When one creates a coupon , there are validations.
+2. it will throw error json if validation is not met.
+3. if all validations are done , then this coupon is saved in array.
+4. that saved coupon will be send as response.
 
 ### list all coupons
 it is simple , when user hits the list button , the server pulls all dat from that array and send it as JSON.
 
 ### validate a coupon
-1. When one validates a coupon , based on validations it will throw error json as a result.
-2. if all validations are done , then the discount amount will be send as response.
+1. When one validates a coupon , there are validations.
+2. it will throw error json if validation is not met.
+3. if all validations are done , then the discount amount will be send as response.
 
 
-NOTE - All validations are in index.js file under validation starts here comment
+# NOTE - All validations are in index.js file under validation starts here comment
